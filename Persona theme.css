@@ -640,22 +640,17 @@ header, h1,
 	z-index: 2;
 }
 /*- 12.4.1 Message Seperation -*/
-:is(.messageListItem__5126c, .quotedChatMessage__5126c, .flash__03436):has(+ .messageListItem__5126c .groupStart__5126c,  + .flash__03436 .groupStart__5126c, + .scrollerSpacer__36d07, + .divider__5126c) .groupStart__5126c:has(.avatar_c19a55:not(.compact_c19a55)) 	{
-	min-height: calc(var(--dplus-spacing-ui)*2 + var(--dplus-icon-avatar-chat));
-	padding-top: 1; padding-bottom: 1;
+:is(.messageListItem__5126c, .quotedChatMessage__5126c, .flash__03436):has(+ .messageListItem__5126c .groupStart__5126c, + .flash__03436 .groupStart__5126c, + .scrollerSpacer__36d07, + .divider__5126c) .groupStart__5126c:has(.avatar_c19a55:not(.compact_c19a55)) {
+    min-height: calc(var(--dplus-spacing-ui)*2 + var(--dplus-icon-avatar-chat));
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
-.cozy_c19a55.wrapper_c19a55 {padding-left: calc(var(--dplus-icon-avatar-chat) + var(--dplus-spacing-ui) * 2);}
-.message__5126c {border-radius: 0;}
-.groupStart__5126c,
-.divider__5126c + :is(.messageListItem__5126c, .flash__03436) .message__5126c {
-	border-radius: var(--dplus-radius-ui) var(--dplus-radius-ui) 0 0;
+.cozy_c19a55.wrapper_c19a55 {
+    padding-left: calc(var(--dplus-icon-avatar-chat) + var(--dplus-spacing-ui) * 2);
 }
-:is(.messageListItem__5126c,.flash__03436):has(+ .messageListItem__5126c .groupStart__5126c, + .divider__5126c, + .scrollerSpacer__36d07, + .flash__03436 .groupStart__5126c) .message__5126c {
-	border-radius: 0 0 var(--dplus-radius-ui) var(--dplus-radius-ui);
-}
-:is(.messageListItem__5126c,.flash__03436):has( + .messageListItem__5126c .groupStart__5126c, + .divider__5126c, + .scrollerSpacer__36d07, + .flash__03436 .groupStart__5126c) .groupStart__5126c,
-.divider__5126c + :is(.messageListItem__5126c, .flash__03436):has(+ .messageListItem__5126c .groupStart__5126c) .message__5126c {
-	border-radius: var(--dplus-radius-ui);
+.message__5126c,
+.groupStart__5126c {
+    border-radius: 0 !important;
 }
 /* Forum */
 .container__01ae2:not(.floating__01ae2), .visual-refresh .container_f369db, .form_d9be46 .input__0ed4f {
