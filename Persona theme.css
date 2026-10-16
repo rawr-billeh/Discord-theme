@@ -640,31 +640,38 @@ header, h1,
 	z-index: 2;
 }
 
-/* Remove backgrounds behind chat messages */
-.message__5126c,
-.groupStart__5126c,
-.cozy_c19a55.wrapper_c19a55,
-.messageListItem__5126c .message__5126c,
-.quotedChatMessage__5126c .message__5126c,
-.flash__03436 .message__5126c {
+
+/* Make the entire message list visually continuous */
+[class*="messageListItem"],
+[class*="messageListItem"] [class*="message"],
+[class*="groupStart"],
+[class*="cozyMessage"] {
     background: transparent !important;
     background-color: transparent !important;
     box-shadow: none !important;
     border: none !important;
+    border-radius: 0 !important;
 }
 
-/* Remove hover backgrounds on messages */
-.message__5126c:hover,
-.groupStart__5126c:hover,
-.messageListItem__5126c:hover {
+/* Remove gaps between individual messages */
+[class*="messageListItem"] {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* Remove separate backgrounds on message hover */
+[class*="messageListItem"]:hover,
+[class*="messageListItem"]:hover [class*="message"] {
     background: transparent !important;
     background-color: transparent !important;
+    box-shadow: none !important;
 }
 
-/* Remove rounded message corners */
-.message__5126c,
-.groupStart__5126c {
-    border-radius: 0 !important;
+/* Preserve the normal message content */
+[class*="messageContent"] {
+    background: transparent !important;
 }
 /* Forum */
 .container__01ae2:not(.floating__01ae2), .visual-refresh .container_f369db, .form_d9be46 .input__0ed4f {
