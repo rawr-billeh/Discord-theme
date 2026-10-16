@@ -639,9 +639,7 @@ header, h1,
 	cursor: pointer;
 	z-index: 2;
 }
-
-
-/* Make the entire message list visually continuous */
+* Make the entire message list visually continuous */
 [class*="messageListItem"],
 [class*="messageListItem"] [class*="message"],
 [class*="groupStart"],
