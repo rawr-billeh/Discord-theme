@@ -596,7 +596,7 @@ header, h1,
 	margin-top: var(--group-spacing);
 }
 .wrapper_c19a55:hover, .wrapper_c19a55.selected__5126c {
-	background: var(--dplus-bgc-chatmsg-hover) !important;
+	background: rgba(171, 35, 4)(--dplus-bgc-chatmsg-hover) !important;
 }
 .scrollerSpacer__36d07 { height: 0; }
 .wrapper_c19a55.cozy_c19a55.zalgo_c19a55[aria-labelledby*="upload"] {background-color: var(--dplus-bgc-chatmsg);}
@@ -638,17 +638,6 @@ header, h1,
 	padding: 0;
 	cursor: pointer;
 	z-index: 2;
-}
-* Make the entire message list visually continuous */
-[class*="messageListItem"],
-[class*="messageListItem"] [class*="message"],
-[class*="groupStart"],
-[class*="cozyMessage"] {
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    border: none !important;
-    border-radius: 0 !important;
 }
 /*- 12.4.1 Message Seperation -*/
 :is(.messageListItem__5126c, .quotedChatMessage__5126c, .flash__03436):has(+ .messageListItem__5126c .groupStart__5126c,  + .flash__03436 .groupStart__5126c, + .scrollerSpacer__36d07, + .divider__5126c) .groupStart__5126c:has(.avatar_c19a55:not(.compact_c19a55)) 	{
