@@ -639,35 +639,32 @@ header, h1,
 	cursor: pointer;
 	z-index: 2;
 }
-/*- 12.4.1 Message Seperation -*/
-/* Remove rounded corners from Discord message elements */
+
+/* Remove backgrounds behind chat messages */
 .message__5126c,
 .groupStart__5126c,
 .cozy_c19a55.wrapper_c19a55,
-.messageListItem__5126c,
-.quotedChatMessage__5126c,
-.flash__03436 {
-    border-radius: 0 !important;
+.messageListItem__5126c .message__5126c,
+.quotedChatMessage__5126c .message__5126c,
+.flash__03436 .message__5126c {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
 }
 
-/* Override the original group-start corner styling */
-.groupStart__5126c,
-.divider__5126c + :is(
-    .messageListItem__5126c,
-    .flash__03436
-) .message__5126c,
-:is(.messageListItem__5126c, .flash__03436):has(
-    + .messageListItem__5126c .groupStart__5126c,
-    + .divider__5126c,
-    + .scrollerSpacer__36d07,
-    + .flash__03436 .groupStart__5126c
-) .message__5126c {
-    border-radius: 0 !important;
+/* Remove hover backgrounds on messages */
+.message__5126c:hover,
+.groupStart__5126c:hover,
+.messageListItem__5126c:hover {
+    background: transparent !important;
+    background-color: transparent !important;
 }
 
-/* Add separation between consecutive messages */
-.messageListItem__5126c {
-    margin-bottom: 4px !important;
+/* Remove rounded message corners */
+.message__5126c,
+.groupStart__5126c {
+    border-radius: 0 !important;
 }
 /* Forum */
 .container__01ae2:not(.floating__01ae2), .visual-refresh .container_f369db, .form_d9be46 .input__0ed4f {
