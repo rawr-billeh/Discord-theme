@@ -596,7 +596,7 @@ header, h1,
 	margin-top: var(--group-spacing);
 }
 .wrapper_c19a55:hover, .wrapper_c19a55.selected__5126c {
-	background: rgba(171, 35, 4,30) !important;
+      background: var(--dplus-bgc-chatmsg-hover) !important;
 }
 .scrollerSpacer__36d07 { height: 0; }
 .wrapper_c19a55.cozy_c19a55.zalgo_c19a55[aria-labelledby*="upload"] {background-color: var(--dplus-bgc-chatmsg);}
