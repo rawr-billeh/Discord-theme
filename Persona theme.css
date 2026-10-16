@@ -640,17 +640,34 @@ header, h1,
 	z-index: 2;
 }
 /*- 12.4.1 Message Seperation -*/
-:is(.messageListItem__5126c, .quotedChatMessage__5126c, .flash__03436):has(+ .messageListItem__5126c .groupStart__5126c, + .flash__03436 .groupStart__5126c, + .scrollerSpacer__36d07, + .divider__5126c) .groupStart__5126c:has(.avatar_c19a55:not(.compact_c19a55)) {
-    min-height: calc(var(--dplus-spacing-ui)*2 + var(--dplus-icon-avatar-chat));
-    padding-top: 1px;
-    padding-bottom: 1px;
-}
-.cozy_c19a55.wrapper_c19a55 {
-    padding-left: calc(var(--dplus-icon-avatar-chat) + var(--dplus-spacing-ui) * 2);
-}
+/* Remove rounded corners from Discord message elements */
 .message__5126c,
-.groupStart__5126c {
+.groupStart__5126c,
+.cozy_c19a55.wrapper_c19a55,
+.messageListItem__5126c,
+.quotedChatMessage__5126c,
+.flash__03436 {
     border-radius: 0 !important;
+}
+
+/* Override the original group-start corner styling */
+.groupStart__5126c,
+.divider__5126c + :is(
+    .messageListItem__5126c,
+    .flash__03436
+) .message__5126c,
+:is(.messageListItem__5126c, .flash__03436):has(
+    + .messageListItem__5126c .groupStart__5126c,
+    + .divider__5126c,
+    + .scrollerSpacer__36d07,
+    + .flash__03436 .groupStart__5126c
+) .message__5126c {
+    border-radius: 0 !important;
+}
+
+/* Add separation between consecutive messages */
+.messageListItem__5126c {
+    margin-bottom: 4px !important;
 }
 /* Forum */
 .container__01ae2:not(.floating__01ae2), .visual-refresh .container_f369db, .form_d9be46 .input__0ed4f {
