@@ -621,6 +621,7 @@ header, h1,
 /* New/Old/Load messages bar */
 .newMessagesBar__0f481 {
 	background-color: var(--dplus-accent-ui);
+	color: #000000 !important;
 	border-radius: 0 0 var(--dplus-radius-ui) var(--dplus-radius-ui);
 }
 .newMessagesBar__0f481 button:last-child {
