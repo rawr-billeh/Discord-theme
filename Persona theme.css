@@ -665,7 +665,7 @@ header, h1,
 
 /* group-spacing 0 */
 .group-spacing-0 .message__5126c {
-	border-radius: 0!important;
+	border-radius: 2!important;
 }
 .group-spacing-0 .messageListItem__5126c:has(+ .scrollerSpacer__36d07) .message__5126c {
 	border-radius: 0 0 var(--dplus-radius-ui) var(--dplus-radius-ui)!important;
