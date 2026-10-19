@@ -769,7 +769,7 @@ header, h1,
 	padding-bottom: calc(2px + (var(--dplus-spacing-ui) / 8));
 }
 .channelTextArea__74017 {
-	padding-top: 24px;
+	padding-top: 100px;
 	background-color: transparent;
 	margin-top: var(--dplus-spacing-app) !important;
 	margin: var(--dplus-spacing-ui) 0 0;
