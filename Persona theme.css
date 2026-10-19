@@ -580,9 +580,9 @@ header, h1,
 
 .wrapper_fc8177, #app-mount .children__9293f:after {display: none;}
 .group-spacing-0 { --group-spacing: 0px; }
-.group-spacing-4 { --group-spacing: 4px; }
-.group-spacing-8 { --group-spacing: 8px; }
-.group-spacing-16 { --group-spacing: 16px; }
+.group-spacing-4 { --group-spacing: 0px; }
+.group-spacing-8 { --group-spacing: 0px; }
+.group-spacing-16 { --group-spacing: 0px; }
 .group-spacing-24 { --group-spacing: var(--dplus-spacing-ui); }
 :is(.messageListItem__5126c, .quotedChatMessage__5126c) .message__5126c {
 	background: var(--dplus-bgc-chatmsg);
@@ -665,7 +665,7 @@ header, h1,
 
 /* group-spacing 0 */
 .group-spacing-0 .message__5126c {
-	border-radius: 2!important;
+	border-radius: 0!important;
 }
 .group-spacing-0 .messageListItem__5126c:has(+ .scrollerSpacer__36d07) .message__5126c {
 	border-radius: 0 0 var(--dplus-radius-ui) var(--dplus-radius-ui)!important;
