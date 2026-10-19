@@ -78,14 +78,14 @@
 	--dplus-radius-server: 20%;
 
 	--dplus-spacing-ui: 10px;
-	--dplus-spacing-app: 50px;
+	--dplus-spacing-app: 10px;
 
 	--dplus-icon-avatar-chat: 10px;
 	--dplus-icon-avatar-list: 40px;
 	--dplus-icon-avatar-profile: 40px;
 
 	--dplus-scrollbar-width: 10px;
-	--dplus-members-width: 120px;
+	--dplus-members-width: 240px;
 
 	/* Unit: seconds */
 	--dplus-anim-short: .2s;
