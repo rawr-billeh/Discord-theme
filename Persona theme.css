@@ -698,7 +698,7 @@ header, h1,
 }
 
 /*- 12.4.3 Timestamps + Chat Separators -*/
-.divider__5126c:not(.hasContent__908e2) {margin: 0; top: 0!important;}
+.divider__5126c:not(.hasContent__908e2) {margin: 10px; top: 10px!important;}
 .divider__5126c.beforeGroup__5126c, .divider__5126c.hasContent__5126c {margin-top: var(--group-spacing)!important;}
 .divider__5126c:not(#---new-messages-bar) {
 	border: none;
