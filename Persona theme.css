@@ -642,7 +642,7 @@ header, h1,
 /*- 12.4.1 Message Seperation -*/
 :is(.messageListItem__5126c, .quotedChatMessage__5126c, .flash__03436):has(+ .messageListItem__5126c .groupStart__5126c,  + .flash__03436 .groupStart__5126c, + .scrollerSpacer__36d07, + .divider__5126c) .groupStart__5126c:has(.avatar_c19a55:not(.compact_c19a55)) 	{
 	min-height: calc(var(--dplus-spacing-ui)*2 + var(--dplus-icon-avatar-chat));
-	padding-top: 50px; padding-bottom: 50px;
+	padding-top: 0px; padding-bottom: 0px;
 }
 .cozy_c19a55.wrapper_c19a55 {padding-left: calc(var(--dplus-icon-avatar-chat) + var(--dplus-spacing-ui) * 2);}
 .message__5126c {border-radius: 0;}
