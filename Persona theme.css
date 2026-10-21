@@ -640,12 +640,12 @@ header, h1,
 	bottom: 0;
 	padding: 0;
 	cursor: pointer;
-	z-index: 5;
+	z-index: 3;
 }
 /*- 12.4.1 Message Seperation -*/
 :is(.messageListItem__5126c, .quotedChatMessage__5126c, .flash__03436):has(+ .messageListItem__5126c .groupStart__5126c,  + .flash__03436 .groupStart__5126c, + .scrollerSpacer__36d07, + .divider__5126c) .groupStart__5126c:has(.avatar_c19a55:not(.compact_c19a55)) 	{
 	min-height: calc(var(--dplus-spacing-ui)*2 + var(--dplus-icon-avatar-chat));
-	padding-top: 0; padding-bottom: 0;
+	padding-top: 5px; padding-bottom: 5px;
 }
 .cozy_c19a55.wrapper_c19a55 {padding-left: calc(var(--dplus-icon-avatar-chat) + var(--dplus-spacing-ui) * 2);}
 .message__5126c {border-radius: 0;}
@@ -701,7 +701,7 @@ header, h1,
 }
 
 /*- 12.4.3 Timestamps + Chat Separators -*/
-.divider__5126c:not(.hasContent__908e2) {margin: 10px; top: 10px!important;}
+.divider__5126c:not(.hasContent__908e2) {margin: 5px; top: 5px!important;}
 .divider__5126c.beforeGroup__5126c, .divider__5126c.hasContent__5126c {margin-top: var(--group-spacing)!important;}
 .divider__5126c:not(#---new-messages-bar) {
 	border: none;
