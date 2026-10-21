@@ -640,7 +640,8 @@ header, h1,
 	bottom: 0;
 	padding: 0;
 	cursor: pointer;
-	z-index: 3;
+	z-index: 1px;
+	margin-bottom: 6px;
 }
 /*- 12.4.1 Message Seperation -*/
 :is(.messageListItem__5126c, .quotedChatMessage__5126c, .flash__03436):has(+ .messageListItem__5126c .groupStart__5126c,  + .flash__03436 .groupStart__5126c, + .scrollerSpacer__36d07, + .divider__5126c) .groupStart__5126c:has(.avatar_c19a55:not(.compact_c19a55)) 	{
